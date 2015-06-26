@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+ 
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ Copyright (C) 2015, Bahar Sateli
+-->
+<ivy-module version="2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+  <info organisation="com.baharsateli" module="tdb-exporter-main" revision="1.0"/>
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+  
+  <dependencies defaultconf="*->master(default),runtime(default)">
+      <dependency org="org.apache.jena" name="apache-jena-libs" rev="2.13.0">
+    		<exclude name="jackson-annotations" />
+            <exclude name="jackson-databind" />
+            <exclude name="jackson-core" />
+            <exclude name="jsonld-java" />
+            <exclude name="log4j" />
+      </dependency>
+   </dependencies>
+</ivy-module>
