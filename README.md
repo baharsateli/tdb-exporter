@@ -22,17 +22,17 @@ Format Code   | Serialization Format
 ------------- | -------------
 TTL           | Turtle
 XML           | RDF/XML
-XMLA          | RDF/XML-ABBRV
+XMLA          | RDF/XML-ABBREV
 N3            | Notation3
 NT            | N-Triples
 CSV           | Comma Separated Values
 
 
-* The `[TDB-PATH]` option must be an absolute path to the TDB directory on your local filesystem. Note that the program does not support symbolic links to the TDB directory.
+* The `[TDB-PATH]` option must be an absolute path to the TDB directory on your local filesystem. **Note** that the program does not support symbolic links to the TDB directory.
 
 
 ## Example
 
-For example, if you TDB triple-store is in `/Users/bahar/tdb` and you would like to export into Turtle format, you would use the command below:
+For example, if your TDB triple-store is in `/Users/bahar/tdb` and you would like to export it into Turtle format, you should use the command below:
 
 `java -jar tdb-exporter.jar TTL /Users/bahar/tdb`
