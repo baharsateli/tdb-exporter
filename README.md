@@ -36,3 +36,7 @@ CSV           | Comma Separated Values
 For example, if your TDB triple-store is in `/Users/bahar/tdb` and you would like to export it into Turtle format, you should use the command below:
 
 `java -jar tdb-exporter.jar TTL /Users/bahar/tdb`
+
+## License
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the [GNU Affero General Public License](LICENSE) for more details.
