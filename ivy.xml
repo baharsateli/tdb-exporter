@@ -24,7 +24,6 @@
             <exclude name="jackson-databind" />
             <exclude name="jackson-core" />
             <exclude name="jsonld-java" />
-            <exclude name="log4j" />
       </dependency>
    </dependencies>
 </ivy-module>
