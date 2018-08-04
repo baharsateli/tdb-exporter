@@ -58,6 +58,7 @@
   </target>
   
   <target name="compile" depends="resolve" description="Compile the source" >
+      <mkdir dir="${bin.dir}"/>
       <javac srcdir="${src.dir}" debug="true" debuglevel="lines,vars,source" destdir="${bin.dir}">
           <classpath refid="compile.classpath" />
       </javac>
